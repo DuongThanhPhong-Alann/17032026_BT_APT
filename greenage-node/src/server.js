@@ -47,11 +47,11 @@ app.get("/api/slides", (_req, res) => {
   res.json(slides);
 });
 
-app.get("/", (_req, res) => res.render("index", { title: "GreenAge", active: "home" }));
-app.get("/gallery", (_req, res) => res.render("page", { title: "Gallery - GreenAge", active: "gallery" }));
-app.get("/news", (_req, res) => res.render("page", { title: "News - GreenAge", active: "news" }));
-app.get("/blog", (_req, res) => res.render("page", { title: "Blog - GreenAge", active: "blog" }));
-app.get("/contact", (_req, res) => res.render("page", { title: "Contact - GreenAge", active: "contact" }));
+app.get("/", (_req, res) => res.render("index", { title: "GreenAge", active: "home", bodyClass: "homepage" }));
+app.get("/gallery", (_req, res) => res.render("page", { title: "Gallery - GreenAge", active: "gallery", bodyClass: "subpage" }));
+app.get("/news", (_req, res) => res.render("page", { title: "News - GreenAge", active: "news", bodyClass: "subpage" }));
+app.get("/blog", (_req, res) => res.render("page", { title: "Blog - GreenAge", active: "blog", bodyClass: "subpage" }));
+app.get("/contact", (_req, res) => res.render("page", { title: "Contact - GreenAge", active: "contact", bodyClass: "subpage" }));
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console

@@ -6,7 +6,7 @@ html(lang="en")
     title= title
     link(rel="stylesheet", href="/styles/site.css")
     script(defer, src="/scripts/slideshow.js")
-  body
+  body(class=bodyClass)
     #tooplate_wrapper
       header#tooplate_header
         #site_title
@@ -30,7 +30,7 @@ html(lang="en")
         #search_box
           form(action="#", method="get")
             input#searchfield(type="text", name="q", value="Search", title="searchfield")
-            input#searchbutton(type="submit", value="", title="Search")
+            button#searchbutton(type="submit", title="Search") Go
 
         .cleaner
 
