@@ -221,7 +221,75 @@ body {
   width: 960px;
 }
 
-.placeholder {
-  padding: 20px 0;
+#tooplate_main .col_w960 {
+  padding: 18px 0 8px;
 }
+
+#tooplate_main h2 {
+  margin: 0 0 18px;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #333;
+  font-weight: normal;
+}
+
+.col_w450 {
+  width: 450px;
+}
+
+.float_l {
+  float: left;
+}
+
+.float_r {
+  float: right;
+}
+
+.wwd_box {
+  min-height: 94px;
+}
+
+.wwd_box img {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 4px 18px 0 0;
+  object-fit: contain;
+}
+
+.wwd_box h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.wwd_box h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wwd_box p {
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.wwd_box p a {
+  color: #76a300;
+  text-decoration: none;
+}
+
+a.more {
+  display: inline-block;
+  min-width: 70px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #a7d63c, #7cab18);
 }
