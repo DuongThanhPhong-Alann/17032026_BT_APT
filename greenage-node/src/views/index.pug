@@ -1,40 +1,12 @@
 extends layout
 
-block content
-  header.site-header
-    .header-inner
-      a.brand(href="/", aria-label="GreenAge")
-        img.brand-logo(src="/images/tooplate_logo.png", alt="GreenAge")
-        span.brand-tagline Free Website Templates
-  #tooplate_menu
-    .menu-inner
-      ul
-        li
-          a.current(href="index.html") Home
-        li
-          a(href="gallery.html") Gallery
-        li
-          a(href="news.html") News
-        li
-          a(href="blog.html") Blog
-        li.last
-          a(href="contact.html") Contact
-      #search_box
-        form(action="#", method="get")
-          input#searchfield(
-            type="text"
-            value="Search"
-            name="q"
-            size="10"
-            title="searchfield"
-            onfocus="clearText(this)"
-            onblur="clearText(this)"
-          )
-          input#searchbutton(
-            type="submit"
-            name="Search"
-            value=""
-            title="Search"
-          )
-      .cleaner
+block middle
+  #tooplate_middle
+    #slider
+      img#slideA.slide.is-active(src="/images/slideshow/01.jpg", alt="slide")
+      img#slideB.slide(src="", alt="")
+      .slider-caption
+        p Suspendisse quis velit ac nisl ultrices tristique a eu velit.
 
+block main
+  //- giữ trống theo yêu cầu (chỉ làm phần giống hình)
