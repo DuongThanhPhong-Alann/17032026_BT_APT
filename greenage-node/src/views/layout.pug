@@ -5,6 +5,34 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title= title
     link(rel="stylesheet", href="/styles/site.css")
+    script(defer, src="/scripts/slideshow.js")
   body
-    block content
+    #tooplate_wrapper
+      header#tooplate_header
+        #site_title
+          h1
+            a(href="/") Green Age
+        .cleaner
 
+      nav#tooplate_menu
+        ul
+          li
+            a(class=active==="home" ? "current" : "", href="/") Home
+          li
+            a(class=active==="gallery" ? "current" : "", href="/gallery") Gallery
+          li
+            a(class=active==="news" ? "current" : "", href="/news") News
+          li
+            a(class=active==="blog" ? "current" : "", href="/blog") Blog
+          li.last
+            a(class=active==="contact" ? "current" : "", href="/contact") Contact
+
+        #search_box
+          form(action="#", method="get")
+            input#searchfield(type="text", name="q", value="Search", title="searchfield")
+            input#searchbutton(type="submit", value="", title="Search")
+
+        .cleaner
+
+      block middle
+      block main

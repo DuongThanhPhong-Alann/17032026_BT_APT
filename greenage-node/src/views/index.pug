@@ -1,9 +1,12 @@
 extends layout
 
-block content
-  header.site-header
-    .header-inner
-      a.brand(href="/", aria-label="GreenAge")
-        img.brand-logo(src="/images/tooplate_logo.png", alt="GreenAge")
-        span.brand-tagline Free Website Templates
+block middle
+  #tooplate_middle
+    #slider
+      img#slideA.slide.is-active(src="/images/slideshow/01.jpg", alt="slide")
+      img#slideB.slide(src="", alt="")
+      .slider-caption
+        p Suspendisse quis velit ac nisl ultrices tristique a eu velit.
 
+block main
+  //- giữ trống theo yêu cầu (chỉ làm phần giống hình)
