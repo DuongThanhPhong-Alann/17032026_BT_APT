@@ -1,0 +1,44 @@
+:root {
+  --brand-red: #d40000;
+  --text-muted: #7a7a7a;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+  background: #ffffff;
+}
+
+.site-header {
+  border-top: 6px solid var(--brand-red);
+  background: #ffffff;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 205px;
+  height: 48px;
+  display: block;
+}
+
+.brand-tagline {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
+}
+
